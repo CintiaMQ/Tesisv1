@@ -5,5 +5,104 @@
 @layer base {
   body {
     @apply font-sans; /* Aplica la fuente sans-serif (Roboto) a todo el body */
+    background-color: #090909;
+    color: white;
+    
   }
+  /* Estilos para el título */
+.text-2xl {
+  font-size: 2.25rem; /* Tamaño del texto */
+  color: #24306E;
+}
+.text-3xl {
+  color: #24306E;
+ 
+}
+.custom-button {
+  background-color: #090909; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 1.1rem; /* Tamaño del texto */
+  font-weight: normal; /* Grosor de la fuente */
+  padding: 0.5rem 1rem; /* Relleno */
+  border: 2px solid white;
+  border-radius: 1rem; /* Radio de borde */
+}
+.custom-nav {
+  width: 100%; /* Ancho del contenedor */
+  height: auto; /* Altura automática */
+  background-color: #090909; /* Color de fondo */
+  padding: 0.5rem 1rem; /* Relleno */
+  border-radius: 1rem; /* Radio de borde más redondo */
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);/*Sombra */
+  
+}
+/* Estilos para las versiones específicas del contenedor de navegación */
+@media (min-width: 640px) {
+  .custom-nav {
+    padding: 0.5rem 1.5rem; /* Relleno para pantallas medianas y grandes */
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-nav {
+    padding: 0.5rem 2rem; /* Relleno para pantallas grandes */
+  }
+  
+}
+.logo-text {
+  font-size: 3.2rem;
+  color: #FFA500; /* Color naranja */
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+.video-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  margin: 30px;
+}
+
+.video-wrapper {
+  width: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50%;
+}
+.reversed-video-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.reversed-video-wrapper {
+  border-radius: 20px; /* Radio de borde para hacer los costados redondos */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+/*Footer*/
+.logo-container {
+  width: 200px; /* Ancho deseado para el contenedor del logo */
+}
+
+.logo-image2 {
+  width: 50%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos hacia la derecha */
+
+  margin-left: 30px; /* Agrega margen a la derecha para separarlos del logo */
+}
+
+.links-container a {
+  margin-bottom: 10px; /* Espacio entre cada enlace */
+}
+
+
 }

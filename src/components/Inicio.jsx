@@ -21,19 +21,20 @@ function Inicio() {
             </Link>
           </div>
         </div>
-        <div style={{ width: '50%', marginLeft: '50%', marginBottom:'20px' }}>
-          <h1 className="text-3xl font-semibold">Ver Video</h1>
-          <p className="text-base" style={{ textAlign: 'justify' }}>
-            ¡Explora nuestra página web a través de este video instructivo! Descubre paso a paso cómo navegar, usar nuestras herramientas y encontrar tu camino hacia tu vocación profesional. Una guía práctica para sacar el máximo provecho de nuestra plataforma.
-          </p>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', margin:'20px' }}>
-            
-            <YouTubeVideo videoId="VIDEO_ID" />
+        <div className='video-container' >
+          <div className='video-wrapper'>
+            <YouTubeVideo videoId="hGGL1sA0H5k" />
           </div>
-        <div style={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'start', justifyContent: 'flex-start', margin: '20px' }}>
-          <div style={{ width: '40%' }}>
-            <YouTubeVideo videoId="VIDEO_ID" />
+          <div style={{ width: '55%', marginLeft: '20%', marginTop:'5px' }}>
+            <h1 className="text-3xl font-semibold">Ver Video</h1>
+            <p className="text-base" style={{ textAlign: 'justify' }}>
+              ¡Explora nuestra página web a través de este video instructivo! Descubre paso a paso cómo navegar, usar nuestras herramientas y encontrar tu camino hacia tu vocación profesional. Una guía práctica para sacar el máximo provecho de nuestra plataforma.
+            </p>
+          </div>
+        </div>
+        <div className='reversed-video-container'>
+          <div className='reversed-video-wrapper'>
+            <YouTubeVideo videoId="enZHJ0RHZOQ" />
           </div>
           <div style={{ width: '50%', marginRight: '10%', marginTop: '20px' }}>
             <h1 className="text-3xl font-semibold">Test Vocacional</h1>

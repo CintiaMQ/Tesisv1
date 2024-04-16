@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link} from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
+{/*import tecvoc from '../assets/tecvoc.png'*/}
+
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -25,16 +27,17 @@ const Header = () => {
 
   return (
     <>
-      <nav className="w-full h-auto bg-[#24306E] lg:px-24 md:px-16 sm:px-14 px-12 py-2 shadow-md">
+      <nav className="custom-nav">
 
         <div className="justify-between mx-auto lg:w-full md:items-center md:flex">
           {/* Navbar logo & toggle button section */}
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* Logo section */}
-              <Link to="/" className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
-                Navbar
-              </Link>
+              <Link to="/" className="logo-text">
+  {/*<img src={tecvoc} alt="Logo" className="w-12 h-auto mr-2" /> {/* Aquí agregamos el logo */}
+ TECVOC {/* Este es el texto alternativo en caso de que la imagen no se cargue */}
+</Link>
               {/* Toggle button section  (we will do it later) */}
               <div className="md:hidden">
                 <button
@@ -62,7 +65,7 @@ const Header = () => {
                 </li>
               ))}
               <li>
-              <Link to="/registro"><button className="bg-orange-500 text-[1.1rem] font-normal text-white px-5 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">Registrar</button></Link>
+              <Link to="/registro"><button className="custom-button">Registrar</button></Link>
 
               </li>
             </ul>
